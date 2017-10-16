@@ -40,7 +40,8 @@
          <Polytope file="Geometry/Frame" />
      </Drawable>
 </Frame>
-  
+  
+
 <Frame name="Light" refframe="LightFrame">
      <RPY> 0 0 0 </RPY> <Pos> 0 0 2 </Pos>
      <Drawable name="Light" refframe="Light">
