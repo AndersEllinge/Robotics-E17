@@ -81,7 +81,7 @@ void createLUAPath(double epsilon, int seed, WorkCell::Ptr wc, Device::Ptr devic
 }
 
 int main(int argc, char** argv) {
-	const string wcFile = "/home/student/Desktop/Robotics-E17/Projects/Mandatory Exercise 2/Kr16WallWorkCell/Scene.wc.xml";
+	const string wcFile = "../Kr16WallWorkCell/Scene.wc.xml";
 	const string deviceName = "KukaKr16";
 	cout << "Trying to use workcell " << wcFile << " and device " << deviceName << endl;
 
@@ -113,12 +113,12 @@ int main(int argc, char** argv) {
 
 
 	// Try diffenrent epsilon values
-	//*
+	/*
 	double time;
-	double deltaEpsilon = 0.1;
-	double epsilon = 0.1;
-	double epsilonMax = 2.01;
-	int nSeeds = 20;
+	double deltaEpsilon = 0.05;
+	double epsilon = 0.05;
+	double epsilonMax = 5;
+	int nSeeds = 50;
 	QPath path;
 	ofstream stats;
 	stats.open("stats.csv");
@@ -136,6 +136,10 @@ int main(int argc, char** argv) {
 	}
 	
 	stats.close();
+	
+	*/
+
+	createLUAPath(1.5, 77, wc, device, state);
 
 	cout << "Program done." << endl;
 	return 0;
