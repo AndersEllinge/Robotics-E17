@@ -112,7 +112,7 @@ int main(int argc, char** argv) {
 		return 0;
 
 
-	// Try diffenrent epsilon values
+	// Generate statistics
 	/*
 	double time;
 	double deltaEpsilon = 0.05;
@@ -136,7 +136,6 @@ int main(int argc, char** argv) {
 	}
 	
 	stats.close();
-	
 	*/
 
 	createLUAPath(1.5, 77, wc, device, state);
